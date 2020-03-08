@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean id="fruit" class="mx.com.proyecti.Fruit"></bean> -->
+	
+	<!-- <bean id="fruitWithArguments" class="mx.com.proyecti.Fruit">
+		<constructor-arg index="0" value="apple"></constructor-arg>
+	</bean>  -->
+	
+	<bean id="fruitWithAttributes" class="mx.com.proyecti.Fruit">
+		<property name="fruitName" value="strawberry"></property>
+	</bean>
+	<!-- <bean id="vegetable" class="mx.com.proyecti.Vegetable"></bean> -->
+	<bean id="vegetableWithListAndMap" class="mx.com.proyecti.Vegetable">
+		<property name="vegetableNameList">
+			<list>
+				<value>Onion</value>
+				<value>Carrot</value>
+				<value>Brocoli</value>
+				<value>Potato</value>
+			</list>
+		</property>
+		
+		<property name="vegetableNameMap">
+			<map>
+				<entry key="Onion" value="white"></entry>
+				<entry key="Carrot" value="orange"></entry>
+				<entry key="Brocolli" value="green"></entry>
+				<entry key="Potatoe" value="Brown"></entry>
+			</map>
+		</property>
+	</bean>
+	
+	
+</beans>
+
